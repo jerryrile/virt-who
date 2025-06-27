@@ -1129,6 +1129,7 @@ class Virt(IntervalThread):
         import virtwho.virt.fakevirt
         import virtwho.virt.kubevirt
         import virtwho.virt.ahv  # noqa: F401
+        import virtwho.virt.proxmox
 
         return [subcls for subcls in cls.__subclasses__()]
 

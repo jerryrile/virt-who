@@ -8,6 +8,8 @@ from .virt import (
     Hypervisor, DestinationThread, IntervalThread, info_to_destination_class
 )
 
+from .proxmox.proxmox import Proxmox, ProxmoxConfigSection
+
 __all__ = [
     'Virt', 'VirtError', 'Guest', 'AbstractVirtReport',
     'DomainListReport', 'HostGuestAssociationReport',
@@ -15,3 +17,10 @@ __all__ = [
     'DestinationThread', 'IntervalThread',
     'info_to_destination_class'
 ]
+
+VIRT_BACKENDS = {
+    'proxmox': Proxmox,
+}
+VIRT_CONFIG_SECTIONS = {
+    'proxmox': ProxmoxConfigSection,
+}

@@ -40,7 +40,7 @@ logger = log.getLogger(name='config', queue=False)
 _effective_config = None
 
 VW_CONF_DIR = "/etc/virt-who.d/"
-VW_TYPES = ("esx", "libvirt", "hyperv", "fake", "kubevirt", "ahv")
+VW_TYPES = ("esx", "libvirt", "hyperv", "fake", "kubevirt", "ahv", "proxmox")
 VW_GENERAL_CONF_PATH = "/etc/virt-who.conf"
 VW_GLOBAL = "global"
 VW_VIRT_DEFAULTS_SECTION_NAME = "defaults"

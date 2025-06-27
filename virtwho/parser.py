@@ -43,6 +43,7 @@ SAT5_VM_DISPATCHER = {
     'hyperv': {'owner': False, 'server': True, 'username': True},
     'kubevirt': {'owner': False, 'server': False, 'username': False, 'kubeconfig': True, 'kubeversion': False, 'insecure': False},
     'ahv': {'owner': False, 'server': False, 'username': False},
+    'proxmox': {'owner': False, 'server': True, 'username': True, 'password': True, 'realm': False},
 }
 
 SAT6_VM_DISPATCHER = {
@@ -51,6 +52,7 @@ SAT6_VM_DISPATCHER = {
     'hyperv': {'owner': True, 'server': True, 'username': True},
     'kubevirt': {'owner': True, 'server': False, 'username': False, 'kubeconfig': True, 'kubeversion': False, 'insecure': False},
     'ahv': {'owner': False, 'server': False, 'username': False},
+    'proxmox': {'owner': True, 'server': True, 'username': True, 'password': True, 'realm': False},
 }
 
 
