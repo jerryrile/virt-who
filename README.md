@@ -39,6 +39,7 @@ Backends for reporting hosts to guests association:
 * Remote libvirt
 * Kubevirt
 * Nutanix AHV Virtualization
+* Proxmox
 
 
 ## Supported subscription managers
